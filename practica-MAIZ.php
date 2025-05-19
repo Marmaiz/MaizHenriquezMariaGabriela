@@ -8,7 +8,7 @@
  * - Asignar variables a la vista (Smarty) y renderizar la plantilla correspondiente.
  *
  * @author Maria G. Maiz H.
- * @version 1
+ * @version 2
  */
 class ControladorMGM
 {
@@ -59,7 +59,7 @@ class ControladorMGM
                 // Valido los datos y almaceno el error si corresponde
                 if ($ejemplares_disponibles <= 0) {
                     $valido = false;
-                    $errones_salida = $errones_salida . "El número de ejemplares debe ser un número entero y mayor a 0. <br>";
+                    $errones_salida = $errones_salida . "El número de ejemplares debe ser un número entero y mayor a 0. <br><br>";
                 }
 
                 if ($paginas <= 0) {
